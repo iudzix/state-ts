@@ -1,0 +1,205 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* Body and overall layout */
+body {
+    background-color: #f4f7f9;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Main container for the GPA calculator */
+.container {
+    max-width: 650px;
+    background-color: #ffffff;
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e0e6ed;
+}
+
+/* Headings */
+.header {
+    text-align: center;
+    color: #333d47;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.subheader {
+    color: #556270;
+    font-size: 1.25rem;
+    border-bottom: 2px solid #aebcbf;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Input form section */
+.input-form {
+    display: grid;
+    grid-template-columns: 2fr 1fr auto;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+/* Select fields */
+.select-field {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #cdd5df;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #495057;
+    background-color: #f8f9fa;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.select-field:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+/* Buttons */
+.button-add,
+.button-calculate {
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-transform: uppercase;
+}
+
+.button-add {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+.button-add:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+.button-calculate {
+    background-color: #28a745;
+    color: #ffffff;
+    width: 100%;
+}
+
+.button-calculate:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
+}
+
+.button-remove {
+    padding: 8px 12px;
+    font-size: 0.8rem;
+    background-color: #dc3545;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button-remove:hover {
+    background-color: #c82333;
+}
+
+/* Course list section */
+.course-list {
+    margin-bottom: 2rem;
+}
+
+.course-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.course-item:hover {
+    background-color: #e9ecef;
+}
+
+.red-text {
+    color: #dc3545;
+    font-weight: bold;
+}
+
+.empty-list {
+    text-align: center;
+    color: #888;
+    font-style: italic;
+    padding: 2rem 0;
+}
+
+/* GPA display section */
+.gpa-display {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.gpa-result {
+    margin-top: 1.5rem;
+    font-size: 2.25rem;
+    color: #28a745;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
