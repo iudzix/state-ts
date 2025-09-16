@@ -1,9 +1,8 @@
-import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import ButtonAdd from './components/ButtonAdd'
-import HeaderTxt from './components/HeaderTxt'
+//import HeaderTxt from './components/HeaderTxt'
 
 function App() {
 
@@ -46,8 +45,8 @@ const BUS_MEMBERS: Member[] = [
         ))}
     </ul>
       <div>
-        <HeaderTxt title='Header Computer Science' textSize='100' status={false}/>
-        <HeaderTxt title='Maejo University' textSize='50' status={true}/>
+        {/* <HeaderTxt title='Header Computer Science' textSize='100' status={false}/>
+        <HeaderTxt title='Maejo University' textSize='50' status={true}/> */}
         <h2>{126+1}</h2>
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
