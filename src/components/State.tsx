@@ -1,7 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState} from 'react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
+import '../App.css';
 
 // Zod Schema for form validation
 const memberSchema = z.object({
